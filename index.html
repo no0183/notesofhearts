@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>心之符 Notes of Hearts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/common/favicon.ico">
+	<!-- CSS reset -->
+	<link rel="stylesheet" type="text/css" href="assets/vender/normalize.css">
+	<!-- Google fonts -->
+	<!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/notosanstc.css"> -->
+	<link rel="stylesheet" href="assets/vender/fonts/font_Eng.css">
+	<link rel="stylesheet" href="assets/vender/fonts/font_zhTW.css">
+<!-- 	<link rel="stylesheet" href="assets/vender/font/font_zhCN.css"> -->
+	<!-- CSS vender -->
+	<link rel="stylesheet" type="text/css" href="assets/vender/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="assets/vender/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="assets/vender/fontello/css/fontello.css">
+	<!-- <link rel="stylesheet" href="assets//vender/swiper/css/swiper.min.css"> -->
+	<!-- <link rel="stylesheet" href="assets//vender/swiper/css/animate.min.css"> -->
+	<!-- <link rel="stylesheet" href="assets/vender/AOS/aos.css" > -->
+	<!-- Js vender -->
+	<script src="assets/vender/jQuery/modernizr.custom.js"></script>
+	<!-- CSS global & components -->
+	<link rel="stylesheet" type="text/css" href="assets/css/base.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/components.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- Start header -->
+		<div id="" class="scrollspy header">
+			<nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
+				<div class="container">
+	  				<a class="navbar-brand" href="index.html">logo</a>
+	  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	   			 	<!-- <span class="navbar-toggler-icon"></span> -->
+					<div class="hamburger" id="hamburger-btn">
+						<span class="line"></span>
+						<span class="line"></span>
+						<span class="line"></span>
+					</div>
+
+	 			 	</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    	<ul class="navbar-nav ml-auto">
+				      		<li class="nav-item">
+				        		<a class="nav-link anchor1" href="#anchor1">首頁</a>
+				      		</li>
+				      		<li class="nav-item">
+				        		<a class="nav-link anchor2" href="#anchor2">最新消息</a>
+				      		</li>
+				      		<li class="nav-item dropdown">
+				        		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">遊戲介紹
+				        		</a>
+				       			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          			<a class="dropdown-item anchor3a" href="#anchor3a">遊戲章節</a>
+				          			<a class="dropdown-item anchor3b" href="#anchor3b">遊戲畫面</a>
+				         			<a class="dropdown-item anchor3c" href="#anchor3c">自定角色</a>
+				        		</div>
+				     		 </li>
+				     		<li class="nav-item">
+				      			<a class="nav-link anchor4" href="#anchor4">故事角色</a>
+				      		</li>
+				      		<li class="nav-item">
+				      			<a class="nav-link anchor5" href="#anchor5">遊戲下載</a>
+				      		</li>
+				      		<li class="nav-item anchor6">
+				      			<a class="nav-link" href="#anchor6">製作人員</a>
+				      		</li>
+						</ul>
+			 		</div>
+			 		<!-- Start languagebar -->
+			 		<div class="pc">
+				 		<div class="lang-container">
+				 			<a class="lang-zhCN" href="#!">簡</a>
+				 			<a class="lang-zhTW active" href="#!">繁</a>
+				 			<a class="lang-EN" href="#!">EN</a>
+				 		</div>
+			 		</div>
+			 		<!-- End languagebar -->
+				</div>
+			</nav>
+		</div>
+		<!-- End header -->
+
+		<!-- Start languagebar -->
+		<div class="mobile">
+			<div class="lb-fixed">
+				<div class="lang-container">
+					<a class="lang-zhCN" href="#!">簡</a>
+					<a class="lang-zhTW active" href="#!">繁</a>
+					<a class="lang-EN" href="#!">EN</a>
+				</div>
+			</div>
+		</div>
+		<!-- End languagebar -->
+
+		<!-- Start asidebox -->
+		<div id="" class="scrollspy asideBox-container">
+			<nav class="asideBox">
+				<ul>
+					<li class="title1">
+						<a href="#anchor1" class="nav-link anchor1" title="首頁"></a>
+					</li>
+					<li class="title2">
+						<a href="#anchor2" class="nav-link anchor2" title="最新消息"></a>
+					</li>
+					<li class="title3a">
+						<a href="#anchor3a" class="nav-link anchor3a" title="遊戲章節"></a>
+					</li>
+					<li class="title3b">
+						<a href="#anchor3b" class="nav-link anchor3b" title="遊戲畫面"></a>
+					</li>
+					<li class="title3c">
+						<a href="#anchor3c" class="nav-link anchor3c" title="自定角色"></a>
+					</li>
+					<li class="title4">
+						<a href="#anchor4" class="nav-link anchor4" title="故事角色"></a>
+					</li>
+					<li class="title5">
+						<a href="#anchor5" class="nav-link anchor5" title="遊戲下載"></a>
+					</li>
+					<li class="title6">
+						<a href="#anchor6" class="nav-link anchor6" title="製作人員"></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- End asidebox -->
+
+		<!-- Start main -->
+		<section data-spy="scroll" data-target="scrollspy" data-offset="0" class="main">
+
+		<!-- Start Tailer -->
+		<div class="top jumbotron u-text-center" id="anchor1">
+			<div class="bg-wrapper">
+				<div class="bg-fixed" style="background-image: url(assets/images/bg/bg1.jpg);"></div>
+			</div>
+			<div class="mask mask--dark"></div>
+			<div class="container">
+				<h1 class="jumbotron__heading js-moveInUp">遊戲前導片</h1>
+				<div class="movie-container js-moveInUp">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HuBFKC4lp5Q" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="anchor2 chevron-center js-moveInUp-delay"><span class="chevron bottom"></span></div>
+			</div>
+		</div>
+		<!-- End Tailer -->
+
+		<!-- Start News -->
+		<div class="news hero hero--light-grey-2" id="anchor2">
+			<div class="container">
+				<h2 class="heading js-moveInUp">最新消息</h2>
+				<h4 class="u-mb-32 js-moveInUp">製作進度</h4>
+				<div class="progressbar-container js-moveInUp">
+					<div class="progressbox">
+						<div class="bar"></div>
+					</div>
+					<div class="point-container">
+						<div class="point point--complete">
+							<div class="bullet"></div>
+							<label class="label ch0"></label>
+						</div>
+						<div class="point point--active">
+							<div class="bullet"></div>
+							<label class="label ch1"></label>
+						</div>
+						<div class="point point--complete">
+							<div class="bullet"></div>
+							<label class="label ch2"></label>
+						</div>
+						<div class="point point--complete">
+							<div class="bullet"></div>
+							<label class="label ch3"></label>
+						</div>
+						<div class="point point--complete">
+							<div class="bullet"></div>
+							<label class="label ch4"></label>
+						</div>
+						<div class="point point--complete">
+							<div class="bullet"></div>
+							<label class="label ch5"></label>
+						</div>
+						<div class="point point--complete">
+							<div class="bullet"></div>
+							<label class="label ch6"></label>
+						</div>
+					</div>
+				</div>
+				<div class="card js-moveInUp">
+					<div class="row">
+						<div class="col-lg-4 col-md-4">
+							<div class="img-container">
+								<div class="image" style="background-image: url(assets/images/common/Fire.png);"></div>
+							</div>
+						</div>
+						<div class="col-lg-8 col-md-8">
+							<div class="card-body">
+								<ul class="newsbox">
+									<li class="news-line">
+										<a class="news-para" href="#!">Kaga聖誕節插畫公開！</a>
+										<span>20171223</span>
+			      					</li>
+									<li class="news-line">
+										<a class="news-para" href="#!">萬聖節DLC，追加劇情更新！</a>
+										<span>20171130</span>
+			      					</li>
+									<li class="news-line">
+										<a class="news-para" href="#!">Ver1.3.8 修復遊戲無法啟動的問題</a>
+										<span>20170420</span>
+			      					</li>
+									<li class="news-line">
+										<a class="news-para" href="#!">Ver1.3.7 更新網絡插件</a>
+										<span>20170313</span>
+			      					</li>
+									<li class="news-line">
+										<a class="news-para" href="#!">歡迎來到Notes of Hearts的世界！</a>
+										<span>20170220</span>
+			      					</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End News -->
+
+		<!-- Start chapter -->
+		    
+	
+		<div class="index-chapter chapter" id="anchor3a">
+			<div class="bg-wrapper">
+				<div class="bg-fixed" style="background-image: url(assets/images/bg/bg2.jpg);"></div>
+			</div>
+			<div class="mask mask--dark"></div>
+			<div class="container">
+				<h2 class="heading js-moveInUp">遊戲章節</h2>
+				<div class="slide-container js-moveInUp">
+					<div id="carousel-1-Indicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-1-Indicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-1-Indicators" data-slide-to="1"></li>
+							<li data-target="#carousel-1-Indicators" data-slide-to="2"></li>
+							<li data-target="#carousel-1-Indicators" data-slide-to="3"></li>
+							<li data-target="#carousel-1-Indicators" data-slide-to="4"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="assets/images/product/chapter01_orig_zh.png" alt="Chapter01">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/product/chapter02_orig_zh.png" alt="Chapter02">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/product/chapter03_orig_zh.png" alt="Chapter03">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/product/chapter04_orig_zh.png" alt="Chapter04">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/product/chapter05_orig_zh.png" alt="Chapter05">
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carousel-1-Indicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carousel-1-Indicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+				</div>
+				<p class="para js-moveInUp">遊戲的劇情一共分成6個章節，玩家在劇情裡將時刻做出選擇，而這些選擇將會對遊戲的劇情產生影響每個章節都有新人物，新地圖和新迷宮。</p>
+			</div>
+		</div>
+	
+		<!-- End chapter -->
+
+		<!-- Start gallery -->
+		<div class="index-gallery hero hero--light-grey-2" id="anchor3b">
+			<div class="container">
+				<h2 class="heading js-moveInUp">遊戲畫面</h2>
+					<section id="dg-container" class="dg-container js-moveInUp">
+					<div class="dg-wrapper">
+						<a href="#!"><img src="assets/images/product/gameplay1.jpg" alt="gameplay1"><div class="title">心之符首家山中小屋上線啦！</div></a>
+						<a href="#!"><img src="assets/images/product/gameplay2.jpg" alt="gameplay2"><div class="title">便宜又大碗，歡樂自助餐開吃囉！</div></a>
+						<a href="#!"><img src="assets/images/product/gameplay3.jpg" alt="gameplay3"><div class="title">笑容逐漸消失</div></a>
+						<a href="#!"><img src="assets/images/product/gameplay4.jpg" alt="gameplay4"><div class="title">大秀肌肉的猛男將軍</div></a>
+						<a href="#!"><img src="assets/images/product/gameplay5.jpg" alt="gameplay5"><div class="title">噗通噗通♥小貓咪占星羞恥PLAY</div></a>
+						<a href="#!"><img src="assets/images/product/gameplay6.jpg" alt="gameplay6"><div class="title">來自魔法學院的老司機飆車啦！</div></a>
+					</div>
+					<nav>
+						<i class="dg-prev fa fa-chevron-left"></i>
+						<i class="dg-next fa fa-chevron-right"></i>
+					</nav>
+				</section>
+				<p class="para js-moveInUp">Notes of Hearts是一款開發中的PC/MAC平台的電子遊戲。遊戲的舞台是劍與魔法的世界，將結合回合制RPG和戀愛養成的玩法。戰鬥系統採用最大3v3的回合制的方式，自由的組隊和互動，定會給玩家帶來豐富的體驗。</p>
+			</div>
+		</div>
+		<!-- End gallery -->
+
+		<!-- Start customization -->
+		<div class="customization" id="anchor3c">
+			<div class="bg-wrapper">
+				<div class="bg-fixed" style="background-image: url(assets/images/bg/bg3.jpg);"></div>
+			</div>
+			<div class="mask mask--dark"></div>
+			<div class="container">
+				<div class="section-intro">
+					<h2 class="title js-moveInUp">自定義角色</h2>
+					<p class="para justify js-moveInUp">玩家身為遊戲的主人公，在遊戲開始時可以自定義喜歡的性別和種族。本遊戲支持同性戀愛，所以所選的性別並不會對遊戲體驗造成影響！</p>
+				</div>
+				<div class="slide-container js-moveInUp">
+					<div id="carousel-2-Indicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-2-Indicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-2-Indicators" data-slide-to="1"></li>
+							<li data-target="#carousel-2-Indicators" data-slide-to="2"></li>
+							<li data-target="#carousel-2-Indicators" data-slide-to="3"></li>
+							<li data-target="#carousel-2-Indicators" data-slide-to="4"></li>
+							<li data-target="#carousel-2-Indicators" data-slide-to="5"></li>
+							<li data-target="#carousel-2-Indicators" data-slide-to="6"></li>
+							<li data-target="#carousel-2-Indicators" data-slide-to="7"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="d-block w-100" src="assets/images/character/ava_human_1_orig.png" alt="人族">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/character/ava_cat_1_orig.png" alt="貓族">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/character/ava_dog_1_orig.png" alt="犬族">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/character/ava_dragon_1_orig.png" alt="龍族">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/character/ava_chik_1_orig.png" alt="雞族">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/character/ava_fe_1_orig.png" alt="妖精族">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/character/member1.png" alt="各式角色">
+							</div>
+							<div class="carousel-item">
+								<img class="d-block w-100" src="assets/images/character/member2.png" alt="各式敵人">
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carousel-2-Indicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carousel-2-Indicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+				<p class="para js-moveInUp">隨著劇情發展，以及主人公的選擇，主角將與各色各樣的角色會進行美妙的邂逅。</p>
+			</div>
+		</div>
+		<!-- End customization -->
+
+		<!-- Start character -->
+		<div class="index-character hero hero--light-grey-2" id="anchor4">
+			<div class="character">
+				<div class="container">
+					<div class="section-intro">
+						<h2 class="title js-moveInUp">故事角色</h2>
+						<p class="para js-moveInUp">我們專注刻劃每個角色的性格與細膩的服裝，可發展戀愛關係的角色將多達十餘人！</p>
+					</div>
+					<div class="slide-container">
+						<div id="carousel-3-Indicators" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-3-Indicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-3-Indicators" data-slide-to="1"></li>
+								<li data-target="#carousel-3-Indicators" data-slide-to="2"></li>
+								<li data-target="#carousel-3-Indicators" data-slide-to="3"></li>
+								<li data-target="#carousel-3-Indicators" data-slide-to="4"></li>
+								<li data-target="#carousel-3-Indicators" data-slide-to="5"></li>
+								<li class="next-line" data-target="#carousel-3-Indicators" data-slide-to="6"></li>
+								<li data-target="#carousel-3-Indicators" data-slide-to="7"></li>
+								<li data-target="#carousel-3-Indicators" data-slide-to="8"></li>
+								<li data-target="#carousel-3-Indicators" data-slide-to="9"></li>
+								<li data-target="#carousel-3-Indicators" data-slide-to="10"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="assets/images/character/intro_gullash.png" alt="gullash">
+									<div class="carousel-caption d-md-block">
+									<h5 class="title">退役的紅龍將領</h5>
+									<p class="subtitle">與你分享我的榮耀！</p>
+									<p class="para1">　　旅行商人的澤羅恩，熱中於販賣各種精緻的商品，對於討價還價這種事情也樂在其中。最近才從森靈國徒步旅行抵達埃珂洛斯，油嘴滑舌精通遊說之道的他，將自己的這一特長在各式各樣的貿易活動中發揮地淋漓盡致。
+									<p class="para2">　　本著個人的興趣，澤羅恩喜歡收集各式各樣的小飾品，尤其是那些有著提升幸運效果的小物件絕對不會放過。澤羅恩精通風魔法，並將之用作狩獵寶藏與野外行商貿易時的保護手段。</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="assets/images/character/intro_magnolia.png" alt="magnolia">
+									<div class="carousel-caption d-md-block">
+									<h5 class="title">異鄉的魔法使</h5>
+									<p class="subtitle">我不喜歡太吵雜的環境。</p>
+									<p class="para1">　　旅行商人的澤羅恩，熱中於販賣各種精緻的商品，對於討價還價這種事情也樂在其中。最近才從森靈國徒步旅行抵達埃珂洛斯，油嘴滑舌精通遊說之道的他，將自己的這一特長在各式各樣的貿易活動中發揮地淋漓盡致。
+									<p class="para2">　　本著個人的興趣，澤羅恩喜歡收集各式各樣的小飾品，尤其是那些有著提升幸運效果的小物件絕對不會放過。澤羅恩精通風魔法，並將之用作狩獵寶藏與野外行商貿易時的保護手段。</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="assets/images/character/intro_xingming.png" alt="xingming">
+									<div class="carousel-caption d-md-block">
+									<h5 class="title">貓咪天才占星師</h5>
+									<p class="subtitle">今晚我們在陽台不見不散喔 ♥</p>
+									<p class="para1">　　來自伽利略天文學院的占星術士，自稱是最頂尖學生。因自動化魔法裝置的研究與拉芙蕾絲女士相當投緣。上知天文，下知地理，擅長晝夜與星術的魔法。手上的地球儀是使用魔法的媒介，成分不明。
+									<p class="para2">　　因為喜歡觀星，經常可以在陽台找到他。受不了經常分岔的毛髮，因此三不五時便想去美毛店打理。口頭禪是「你知道要找到一間靠譜的美毛店有多困難嗎？」</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="assets/images/character/intro_oscar.png" alt="oscar">
+									<div class="carousel-caption d-md-block">
+									<h5 class="title">沒落的貴族當家</h5>
+									<p class="subtitle">我還有事情要忙呢。</p>
+									<p class="para1">　　旅行商人的澤羅恩，熱中於販賣各種精緻的商品，對於討價還價這種事情也樂在其中。最近才從森靈國徒步旅行抵達埃珂洛斯，油嘴滑舌精通遊說之道的他，將自己的這一特長在各式各樣的貿易活動中發揮地淋漓盡致。
+									<p class="para2">　　本著個人的興趣，澤羅恩喜歡收集各式各樣的小飾品，尤其是那些有著提升幸運效果的小物件絕對不會放過。澤羅恩精通風魔法，並將之用作狩獵寶藏與野外行商貿易時的保護手段。</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="assets/images/character/intro_kaga.png" alt="kaga">
+									<div class="carousel-caption d-md-block">
+									<h5 class="title">神秘的流浪者</h5>
+									<p class="subtitle">讓我指引你前方的道路。</p>
+									<p class="para1">　　旅行商人的澤羅恩，熱中於販賣各種精緻的商品，對於討價還價這種事情也樂在其中。最近才從森靈國徒步旅行抵達埃珂洛斯，油嘴滑舌精通遊說之道的他，將自己的這一特長在各式各樣的貿易活動中發揮地淋漓盡致。
+									<p class="para2">　　本著個人的興趣，澤羅恩喜歡收集各式各樣的小飾品，尤其是那些有著提升幸運效果的小物件絕對不會放過。澤羅恩精通風魔法，並將之用作狩獵寶藏與野外行商貿易時的保護手段。</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="assets/images/character/intro_emier.png" alt="emier">
+									<div class="carousel-caption d-md-block">
+									<h5 class="title">閃亮亮盜賊</h5>
+									<p class="subtitle">我的偷竊等級已經練滿囉！</p>
+									<p class="para1">　　旅行商人的澤羅恩，熱中於販賣各種精緻的商品，對於討價還價這種事情也樂在其中。最近才從森靈國徒步旅行抵達埃珂洛斯，油嘴滑舌精通遊說之道的他，將自己的這一特長在各式各樣的貿易活動中發揮地淋漓盡致。
+									<p class="para2">　　本著個人的興趣，澤羅恩喜歡收集各式各樣的小飾品，尤其是那些有著提升幸運效果的小物件絕對不會放過。澤羅恩精通風魔法，並將之用作狩獵寶藏與野外行商貿易時的保護手段。</p>
+									</div>
+								</div>
+								<!-- <div class="carousel-item">
+									<img class="d-block w-100" src="assets/images/character/info_lin.png" alt="lin">
+									<div class="carousel-caption d-md-block">
+									<h5 class="subtitle">博學的旅者</h5>
+									<p class="para">你是否見過綠色的夕陽？</p>
+									<p class="para1">　　旅行商人的澤羅恩，熱中於販賣各種精緻的商品，對於討價還價這種事情也樂在其中。最近才從森靈國徒步旅行抵達埃珂洛斯，油嘴滑舌精通遊說之道的他，將自己的這一特長在各式各樣的貿易活動中發揮地淋漓盡致。
+									<p class="para2">　　本著個人的興趣，澤羅恩喜歡收集各式各樣的小飾品，尤其是那些有著提升幸運效果的小物件絕對不會放過。澤羅恩精通風魔法，並將之用作狩獵寶藏與野外行商貿易時的保護手段。</p>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="assets/images/character/info_unknown.png" alt="zeloen">
+									<div class="carousel-caption d-md-block">
+									<h5 class="title">隨風出現的商人</h5>
+									<p class="subtitle">不要小看風的力量。</p>
+									<p class="para1">　　旅行商人的澤羅恩，熱中於販賣各種精緻的商品，對於討價還價這種事情也樂在其中。最近才從森靈國徒步旅行抵達埃珂洛斯，油嘴滑舌精通遊說之道的他，將自己的這一特長在各式各樣的貿易活動中發揮地淋漓盡致。
+									<p class="para2">　　本著個人的興趣，澤羅恩喜歡收集各式各樣的小飾品，尤其是那些有著提升幸運效果的小物件絕對不會放過。澤羅恩精通風魔法，並將之用作狩獵寶藏與野外行商貿易時的保護手段。</p>
+									</div>
+									</div> -->
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carousel-3-Indicators" role="button" data-slide="prev">
+							<i class="fa fa-chevron-left"></i>
+							</a>
+						<a class="carousel-control-next" href="#carousel-3-Indicators" role="button" data-slide="next">
+							<i class="fa fa-chevron-right"></i>
+						</a>
+					</div>
+					<!-- <div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">Slide 1</div>
+							<div class="swiper-slide">Slide 2</div>
+							<div class="swiper-slide">Slide 3</div>
+						</div>
+						<div class="swiper-pagination"></div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div> -->
+					<!-- <div class="menu-list">
+						<div class="title-bar">
+							<h3 class="title js-moveInUp">主要角色 Main Characters</h3>
+						</div>
+						<div class="row js-moveInUp">
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_gullash.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">退役的紅龍將領</h5>
+			 							<h6 class="subtitle">「與你分享我的榮耀！」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_magnolia.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">異鄉的魔法使</h5>
+			 							<h6 class="subtitle">「嗯，我不喜歡太吵雜的環境。」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_xingming.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">貓咪天才占星師</h5>
+			 							<h6 class="subtitle">「今晚我們在陽台不見不散喔♥」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_oscar.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">沒落的貴族當家</h5>
+			 							<h6 class="subtitle">「別打擾我，我還有事情要忙呢。」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 					</div>
+					</div>
+					<div class="menu-list">
+						<div class="row js-moveInUp">
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_kaga.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">神秘的流浪者</h5>
+			 							<h6 class="subtitle">「讓我來告訴你前方的道路...」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_emier.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">閃亮亮盜賊</h5>
+			 							<h6 class="subtitle">「我的偷竊等級已經練滿囉！」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							 <div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_lin.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">博學的旅者</h5>
+			 							<h6 class="subtitle">「你是否見過綠色的夕陽？」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_unknown1.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">想知道我是誰嗎</h5>
+			 							<h6 class="subtitle">「才不告訴你呢！」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 					</div>
+					</div>
+					<div class="menu-list">
+						<div class="title-bar">
+							<h3 class="title js-moveInUp">其他角色 Other Characters</h3>
+						</div>
+						<div class="row js-moveInUp">
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_unknown2.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">？？？</h5>
+			 							<h6 class="subtitle">「？？？」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_unknown3.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">？？？</h5>
+			 							<h6 class="subtitle">「？？？」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_unknown.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">？？？</h5>
+			 							<h6 class="subtitle">「？？？」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 						<div class="col-lg-3 col-md-6 col-sm-12">
+	 							<div class="list-item">
+	 								<a href="#!" class="image-container">
+		 								<div class="image" style="background-image: url('assets/images/character/info_unknown.png');"></div>
+		 							</a>
+		 							<div class="preview">
+		 								<h5 class="title">？？？</h5>
+			 							<h6 class="subtitle">「？？？」</h6>
+		 							</div>
+	 							</div>
+	 						</div>
+	 					</div>
+						</div>
+					</div> -->
+					</div>
+				</div>
+		</div>
+		<!-- End character -->
+
+		<!-- Start quote -->
+		<div class="index-quote">
+			<div class="bg-wrapper">
+				<div class="bg-fixed" style="background-image: url(assets/images/bg/bg4.jpg);"></div>
+			</div>
+			<div class="container">
+				<div class="text-container">
+					<i class="fa fa-quote-right js-moveInUp" aria-hidden="true"></i>
+					<p class="para js-moveInUp">遊戲將結合回合制RPG和戀愛養成的玩法，戰鬥系統採用最大3v3的回合制的方式。<br>自由的組隊和互動，定會給玩家帶來豐富的體驗。</p>
+					<p class="para js-moveInUp">
+						<i>- Kul, Chief Executive Officer</i>
+				</div>
+				</p>
+			</div>
+		</div>
+		<!-- End quote -->
+
+		<!-- Start download -->
+		<div class="hero hero--light-grey-2" id="anchor5">
+			<div class="download">
+				<div class="container">
+					<div class="section-intro">
+						<h2 class="title js-moveInUp">遊戲下載 Download</h2>
+						<p class="para js-moveInUp">遊戲將會在官網上依章節順序分期免費發佈，在Patreon上支持我們可以第一時間獲得最新的版本，​遊戲的最終版將也可以在steam上一次性購買。<br>分為「普通版」和「特別版」兩個版本，其中特別版限定發佈給在Patreon支持我們的用戶，兩個版本的差別從第二章開始，僅限於對成人內容表現的開放程度，包括劇情在內的其他遊戲體驗都不會有差別。</p>
+ 					</div>
+					<div class="download-info">
+						<div class="row">
+							<div class="col-lg-6 col-md-6 col-sm-12 js-moveInRight">
+								<h4 class="title">第一章</h4>
+								<h5 class="subtitle">陰雨初至</h4>
+								<p class="para">剛剛踏上旅行的主人公，在拉芙蕾絲女士別墅中的一天...</p>
+								<div class="image-container" style="background-image: url(assets/images/product/chapter01_orig.png);">
+								</div>
+							</div>	
+							<div class="col-lg-6 col-md-6 col-sm-12 js-moveInLeft">
+								<h4 class="title">先行體驗版 Beta Version</h4>
+								<p class="u-mb-8">請自行選擇想要下載的版本。</p>
+								<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link pill-l active" id="pills-windows-tab" data-toggle="pill" href="#pills-windows" role="tab" aria-controls="pills-windows" aria-selected="true">Windows</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link pill-m" id="pills-macOS-tab" data-toggle="pill" href="#pills-macOS" role="tab" aria-controls="pills-macOS" aria-selected="false">macOS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link pill-r" id="pills-linux-tab" data-toggle="pill" href="#pills-linux" role="tab" aria-controls="pills-linux" aria-selected="false">Linux</a>
+								</li>
+								</ul>
+								<hr>
+									<div class="tab-content" id="pills-tabContent">
+										<div class="tab-pane fade show active" id="pills-windows" role="tabpanel" aria-labelledby="pills-windows-tab">
+											<div class="row">
+												<div class="col-md-6">
+													<h4>Windows x64</h4>
+													<p>暫無問題。</p>
+													<a href="#!" class="btn btn--negative">下載</a>
+												</div>
+												<div class="col-md-6">
+													<h4>Windows x32</h4>
+													<p>暫無問題。</p>
+													<a href="#!" class="btn btn--negative">下載</a>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="pills-macOS" role="tabpanel" aria-labelledby="pills-macOS-tab">
+											<h4>macOS</h4>
+											<p>在 Mac 10.12 環境下，下載遊戲後直接雙擊打開，可能出現無法存檔或者無法更改設置的問題。<br>解決方法：把遊戲從下載路徑拖拽至其他路徑後運行。</p>
+											<a href="#!" class="btn btn--negative">下載</a>
+										</div>
+										<div class="tab-pane fade" id="pills-linux" role="tabpanel" aria-labelledby="pills-linux-tab">
+											<h4>Linux</h4>
+											<p>請先安裝 libgconf-2-4。</p>
+											<a href="#!" class="btn btn--negative">下載</a>
+										</div>
+									</div>
+								<hr>
+								<div class="report">
+									<h4>問題回報</h4>
+									<p>如有發現任何問題，歡迎在留言區提交，亦可發送E-mail至<a href="mailto:ming@notesofhearts.com">ming@notesofhearts.com</a>！我們會盡快修復或回覆。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End download -->
+
+		<!-- Start staff -->
+		<div class="index-staff staff" id="anchor6">
+			<div class="bg-wrapper">
+				<div class="bg-fixed" style="background-image: url(assets/images/bg/bg5.jpg);"></div>
+			</div>
+			<div class="mask mask--dark"></div>
+			<div class="container">
+				<div class="big-word--left js-moveInUp">製作人員</div>
+				<div class="row js-moveInRight">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<div class="card staff u-mb-32">
+							<a href="#!" class="avatar avatar--md" style="background-image: url(assets/images/staff/staff_kul.jpg);"></a>
+							<h4 class="heading">Kul</h4>
+							<h5 class="skill">項目主催‧美術</h5>
+							<p class="para">Casa de La Flora!</p>
+							<a href="#!" class="btn btn--negative btn-md">訪問主頁</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<div class="card staff u-mb-32">
+							<a href="#!" class="avatar avatar--md" style="background-image: url(assets/images/staff/staff_cait.jpg);"></a>
+							<h4 class="heading">Cait</h4>
+							<h5 class="skill">程序‧設計</h5>
+							<p class="para">Meow!</p>
+							<a href="#!" class="btn btn--negative btn-md">訪問主頁</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<div class="card staff u-mb-32">
+							<a href="#!" class="avatar avatar--md" style="background-image: url(assets/images/staff/staff_caro.jpg);"></a>
+							<h4 class="heading">Caro</h4>
+							<h5 class="skill">美術</h5>
+							<p class="para">White is GOOD!</p>
+							<a href="#!" class="btn btn--negative btn-md">訪問主頁</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<div class="card staff u-mb-32">
+							<a href="#!" class="avatar avatar--md" style="background-image: url(assets/images/staff/staff_mei.jpg);"></a>
+							<h4 class="heading">Mei</h4>
+							<h5 class="skill">音樂</h5>
+							<p class="para">mei mei mei ♪</p>
+							<a href="#!" class="btn btn--negative btn-md">訪問主頁</a>
+						</div>
+					</div>
+				</div>
+				<div class="row js-moveInLeft">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<div class="card staff u-mb-32">
+							<a href="#!" class="avatar avatar--md" style="background-image: url(assets/images/staff/staff_xiongma.jpg);"></a>
+							<h4 class="heading">Xiongma</h4>
+							<h5 class="skill">中文翻譯</h5>
+							<p class="para">Beer!</p>
+							<a href="#!" class="btn btn--negative btn-md">訪問主頁</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<div class="card staff u-mb-32">
+							<a href="#!" class="avatar avatar--md" style="background-image: url(assets/images/staff/staff_juza.jpg);"></a>
+							<h4 class="heading">Juza</h4>
+							<h5 class="skill">文案‧編輯</h5>
+							<p class="para">Roar.</p>
+							<a href="#!" class="btn btn--negative btn-md">訪問主頁</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<div class="card staff u-mb-32">
+							<a href="#!" class="avatar avatar--md" style="background-image: url(assets/images/staff/staff_pail.jpg);"></a>
+							<h4 class="heading">Pail</h4>
+							<h5 class="skill">網站‧協力</h5>
+							<p class="para">Tiny Dream.</p>
+							<a href="!#" class="btn btn--negative btn-md">訪問主頁</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<div class="card staff">
+							<a href="#!" class="avatar avatar--md" style="background-image: url(assets/images/staff/staff.jpg);"></a>
+							<h4 class="heading">Staff</h4>
+							<h5 class="skill">小精靈</h5>
+							<p class="para">Little Fairy.</p>
+							<a href="!#" class="btn btn--negative btn-md">訪問主頁</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End staff -->
+
+		<!-- Start pre 預留用 -->
+		<!-- <div class="index-pre hero hero--light-grey-2">
+			<div class="container">
+				<div class="big-word--left js-moveInUp">預留用</div>
+				<h3 class="heading js-moveInUp">還沒想到放什麼</h3>
+				<h3 class="heading js-moveInUp">就是看看效果</h3>
+				<h3 class="heading js-moveInUp">啊啊啊啊！</h3>
+				<p class="para js-moveInUp">Notes of Hearts是一款開發中的PC/MAC平台的電子遊戲。遊戲的舞台是劍與魔法的世界，將結合回合制RPG和戀愛養成的玩法。戰鬥系統採用最大3v3的回合制的方式，自由的組隊和互動，定會給玩家帶來豐富的體驗。</p>
+			</div>
+		</div> -->
+		<!-- End pre -->
+
+		<!-- Start contact -->
+		<!-- <div class="index-contact hero">
+			<div class="mask mask--dark"></div>
+			<div class="container">
+				<div class="big-word--left js-moveInUp">訂閱</div>
+				<h3 class="heading js-moveInUp">訂閱最新訊息</h3>
+				<p class="para js-moveInUp">歡迎留下您的 Email 以便收到我們的最新情報。</p>
+				<form class="form" action="http://www.newsleopard.com/mailverify.htm?x=00000000606f9253016092cdc94a3f48" target="popupwindow" method="post" onsubmit="window.open('', 'popupwindow', 'scrollbars=yes,width=350,height=115');return true">
+					<div class="row js-moveInRight">
+						<div class="col-lg-2">
+								<label class="label" for="">Email</label>
+						</div>
+						<div class="col-lg-10">
+							<div class="form__item">
+								<input class="form__input" type="email" placeholder="請輸入Email" name="email">
+							</div>
+						</div>
+					</div>
+					<div class="form__item js-moveInRight">
+						<input class="form__input" type="text" placeholder="請輸入姓名" name="name">
+					</div>
+						<input class="btn btn--primary btn-md js-moveInLeft" type="submit" value="立即訂閱">
+				</form>
+				
+			</div>
+		</div> -->
+		<!-- End contact -->
+
+		</section>
+		<!-- End main -->
+
+		<!-- Start footer -->
+		<footer class="footer footer--dark">
+			<div class="container">
+				<div class="copyright">
+					<p class="copyright-text">Copyright © 2017-2018 Notes of Hearts</p>
+				</div>
+			</div>
+		</footer>
+		<!-- End footer -->
+
+		<!-- Start underbox -->
+		<div class="underbox">
+			<ul class="underbox-container">
+				<li class="link">
+					<a href="https://www.patreon.com/NotesofHearts" target="_blank" class="link-icon patreon">Patreon</a>
+				</li>
+				<li class="link">
+					<a href="https://twitter.com/KulPlant" target="_blank" class="link-icon twitter">Twitter</a>
+				</li>
+				<li class="link">
+					<a href="https://www.weibo.com/u/6404918537" target="_blank" class="link-icon weibo">Weibo</a>
+				</li>
+				<li class="link">
+					<a href="https://www.facebook.com/ProjectNoH/" target="_blank" class="link-icon facebook">Facebook</a>
+				</li>
+			</ul>
+		</div>
+		<!-- End underbox -->
+	</div> 
+	</div> 
+	
+	
+	<!-- Jquery -->
+	<script src="assets/vender/jQuery/jquery.min.js"></script>
+	<script src="assets/vender/jQuery/modernizr.min.js"></script>
+	<!-- Swiper -->
+	<!-- <script src="assets/vender/swiper/js/swiper.min.js"></script> -->
+	<!-- Anime -->
+	<!-- <script src="assets/vender/swiper/js/swiper.animate.min.js"></script> -->
+	<!-- Colorbox -->
+	<!-- <script src="assets/vender/jQuery/jquery.colorbox-min.js"></script> -->
+	<!-- 3DGallery -->
+	<script src="assets/vender/jQuery/jquery.gallery.js"></script>
+	<!-- Scrollreveal -->
+	<script src="assets/vender/scrollreveal/scrollreveal.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="assets/vender/bootstrap/popper.min.js"></script>
+	<script src="assets/vender/bootstrap/bootstrap.min.js"></script>
+	<!-- Chevron -->
+	<script src="assets/vender/chevron/chevron.js"></script>
+	<!-- AOS -->
+	<script src="assets/vender/AOS/aos.js"></script>
+	<!-- Custom -->
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
