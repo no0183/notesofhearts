@@ -1079,11 +1079,6 @@
 	left: 16px;
 }
 
-/* justify */
-.justify{
-	text-align: justify;
-}
-
 /* staff */
 .index-staff{
 	padding-top: 300px;
@@ -1209,4 +1204,14 @@
 	display: block;
 	line-height: 42px;
 	color: #fff;
+}
+
+/* justify */
+.justify{
+	text-align: justify;
+}
+
+/* overflow */
+.overflow{
+	overflow: hidden;
 }
