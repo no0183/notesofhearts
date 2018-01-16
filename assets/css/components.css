@@ -778,6 +778,7 @@
 	background: #ffffff;
 	border-radius: 10px;
 	border: 10px solid rgba(0,0,0,0.6);
+	overflow: hidden;
 
 	z-index: 5;
 }
@@ -801,8 +802,9 @@
 .news_pop{
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	width: 100%;
+	width: 102%;
 	height: 100%;
 	margin: 5px;
+	padding-right: 3px;
 	padding-bottom: 10px;
 }
