@@ -770,8 +770,6 @@
 	box-sizing: content-box;
 	position: fixed;
 	display: none;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -801,6 +799,8 @@
 	transform: rotate(180deg);
 }
 .news_pop{
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 	width: 100%;
 	height: 100%;
 	margin: 5px;
