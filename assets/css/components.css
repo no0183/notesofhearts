@@ -802,9 +802,8 @@
 .news_pop{
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
-	width: 102%;
+	width: 101%;
 	height: 100%;
 	margin: 5px;
-	padding-right: 3px;
 	padding-bottom: 10px;
 }

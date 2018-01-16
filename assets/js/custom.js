@@ -1,5 +1,60 @@
 $(document).ready(function() {
 
+  var $docEl = $('html, body'),
+    $wrap = $('.wrapper'),
+    scrollTop;
+
+  $('button').click(function(e) {
+    overlayOpen();
+    e.preventDefault();
+  });
+
+  $('.close').click(function(e) {
+    overlayClose();
+    e.preventDefault();
+  });
+  
+  var overlayClose = function() {
+    $.unlockBody();
+    $('body').removeClass('overlay-open');
+  }
+  var overlayOpen = function() {
+    $('body').addClass('overlay-open');
+    $.lockBody();
+  }
+
+  $.lockBody = function() {
+    if(window.pageYOffset) {
+      scrollTop = window.pageYOffset;
+      
+      $wrap.css({
+        top: - (scrollTop)
+      });
+    }
+
+    $docEl.css({
+      height: "100%",
+      overflow: "hidden"
+    });
+  }
+
+  $.unlockBody = function() {
+    $docEl.css({
+      height: "",
+      overflow: ""
+    });
+
+    $wrap.css({
+      top: ''
+    });
+
+    window.scrollTo(0, scrollTop);
+    window.setTimeout(function () {
+      scrollTop = null;
+    }, 0);
+  }
+
+
 // Hamburger
 	$(".hamburger").click(function(){
 		$(this).toggleClass("is-active");
@@ -139,72 +194,72 @@ $(document).ready(function() {
 	// news_all
 	$("#pop_news_all").click(function () {
 		$("#news_all, .overlay").fadeIn(300);
-		$("html, body").addClass("overflow");
+		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, #news_all, .overlay").click(function () {
 		$("#news_all, .overlay").fadeOut(300);
-		$("html, body").removeClass("overflow");
+		// $("html, body").removeClass("overflow");
 	});
 	// news_1
 	$("#pop_1").click(function () {
 		$("#news1, .overlay").fadeIn(300);
-		$("html, body").addClass("overflow");
+		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news1, .overlay").fadeOut(300);
-		$("html, body").removeClass("overflow");
+		// $("html, body").removeClass("overflow");
 	});
 	// news_2
 	$("#pop_2").click(function () {
 		$("#news2, .overlay").fadeIn(300);
-		$("html, body").addClass("overflow");
+		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news2, .overlay").fadeOut(300);
-		$("html, body").removeClass("overflow");
+		// $("html, body").removeClass("overflow");
 	});
 	// news_3
 	$("#pop_3").click(function () {
 		$("#news3, .overlay").fadeIn(300);
-		$("html, body").addClass("overflow");
+		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news3, .overlay").fadeOut(300);
-		$("html, body").removeClass("overflow");
+		// $("html, body").removeClass("overflow");
 	});
 	// news_4
 	$("#pop_4").click(function () {
 		$("#news4, .overlay").fadeIn(300);
-		$("html, body").addClass("overflow");
+		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news4, .overlay").fadeOut(300);
-		$("html, body").removeClass("overflow");
+		// $("html, body").removeClass("overflow");
 	});
 	// news_5
 	$("#pop_5").click(function () {
 		$("#news5, .overlay").fadeIn(300);
-		$("html, body").addClass("overflow");
+		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news5, .overlay").fadeOut(300);
-		$("html, body").removeClass("overflow");
+		// $("html, body").removeClass("overflow");
 	});
 	// version_news
 	$("#pop_versions").click(function () {
 		$("#versions_all, .overlay").fadeIn(300);
-		$("html, body").addClass("overflow");
+		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#versions_all, .overlay").fadeOut(300);
-		$("html, body").removeClass("overflow");
+		// $("html, body").removeClass("overflow");
 	});
 
 // Hover-color
