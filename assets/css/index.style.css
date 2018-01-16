@@ -1211,12 +1211,7 @@
 	text-align: justify;
 }
 
-/* stop-scroll */
-/*html, body{
-	position: relative;
-}*/
-
 /* overflow */
-.overflow{
+/*.overflow{
 	overflow: hidden;
-}
+}*/
