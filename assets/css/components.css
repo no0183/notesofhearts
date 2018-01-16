@@ -20,10 +20,10 @@
  * Tab-pill
  * Big-word
  * Form
- * Progress-bar
  * Footer
  * Underbox
  * Bg-fixed
+ * Newsbox
  */
 
 /*------------------------------------*\
@@ -92,7 +92,7 @@
 }
 .btn.btn--primary.btn--active,
 .btn.btn--primary:active{
-	background-color: #AB3B52;
+	background-color: #8F3144;
 	transform: translateY(1px);
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 6px rgba(0,0,0,.08);
 }
@@ -131,7 +131,7 @@
 }
 .btn.btn--negative.btn--hover,
 .btn.btn--negative:hover{
-	background-color: #4975C9;
+	background-color: #5A87D1;
 	transform: translateY(-1px);
 	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
@@ -142,17 +142,17 @@
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 6px rgba(0,0,0,.08);
 }
 .btn.btn--alert{
-	background-color: #86DDB2;
+	background-color: #5DB59D;
 }
 .btn.btn--alert.btn--hover,
 .btn.btn--alert:hover{
-	background-color: #90EDBF;
+	background-color: #66C7AC;
 	transform: translateY(-1px);
 	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 .btn.btn--alert.btn--active,
 .btn.btn--alert:active{
-	background-color: #76C29C;
+	background-color: #448573;
 	transform: translateY(1px);
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 6px rgba(0,0,0,.08);
 }
@@ -273,7 +273,6 @@
 	background-color: #fbfbfb;
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 	border-radius: 8px;
-	overflow: hidden;
 }
 .card-body{
 	padding: 16px;
@@ -286,7 +285,7 @@
 	
 	white-space: nowrap;
 	overflow: hidden;
-	text-overflow: ellipsis; /* 超過文字變為... */
+	text-overflow: ellipsis;
 }
 .card-para{
 	font-size: 16px;
@@ -327,32 +326,25 @@
     Hamburger
 \*------------------------------------*/
 .hamburger .line{
-  width: 40px;
-  height: 3px;
-  background-color: #fff;
-  display: block;
-  margin: 8px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+	width: 40px;
+	height: 3px;
+	background-color: #fff;
+	display: block;
+	margin: 8px auto;
+
+	transition: all 0.3s ease-in-out;
 }
 .hamburger:hover{
-  cursor: pointer;
+	cursor: pointer;
 }
 #hamburger-btn.is-active .line:nth-child(2){
-  opacity: 0;
+	opacity: 0;
 }
 #hamburger-btn.is-active .line:nth-child(1){
-  -webkit-transform: translateY(11px) rotate(45deg);
-  -ms-transform: translateY(11px) rotate(45deg);
-  -o-transform: translateY(11px) rotate(45deg);
-  transform: translateY(11px) rotate(45deg);
+	transform: translateY(11px) rotate(45deg);
 }
 #hamburger-btn.is-active .line:nth-child(3){
-  -webkit-transform: translateY(-11px) rotate(-45deg);
-  -ms-transform: translateY(-11px) rotate(-45deg);
-  -o-transform: translateY(-11px) rotate(-45deg);
-  transform: translateY(-11px) rotate(-45deg);
+	transform: translateY(-11px) rotate(-45deg);
 }
 
 /*------------------------------------*\
@@ -422,12 +414,11 @@
 	right: 0;
 	transform: translateY(-50%);
 
-	z-index: 10;
+	z-index: 2;
 }
 @media (min-width: 767px){
 	.asideBox{
 	width: 60px;
-	z-index: 10;
 	}
 }
 @media (max-width: 767px){
@@ -481,32 +472,38 @@
 	font-size:12px;
 }
 .asideBox .active:after{
-	left: -20%;
+	left: -60%;
 }
 
 .asideBox .title1 a:after{
-	content:"首頁";
+	content:"Home";
 }
 .asideBox .title2 a:after{
-	content:'最新消息';
+	content:'News';
 }
 .asideBox .title3a a:after{
-	content:'遊戲章節';
+	content:'Chapters';
 }
 .asideBox .title3b a:after{
-	content:'遊戲畫面';
+	content:'Screenshots';
 }
 .asideBox .title3c a:after{
-	content:'自定角色';
+	content:'Customize';
+}
+.asideBox .title3d a:after{
+	content:'Posture';
+}
+.asideBox .title3e a:after{
+	content:'Cards';
 }
 .asideBox .title4 a:after{
-	content:'故事角色';
+	content:'Characters';
 }
 .asideBox .title5 a:after{
-	content:'遊戲下載';
+	content:'Download';
 }
 .asideBox .title6 a:after{
-	content:'製作人員';
+	content:'Credits';
 }
 .asideBox a:last-child{
 	margin-bottom:0;
@@ -593,7 +590,9 @@
 	transform: translateY(0);
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link:active,
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link{
     color: #fff;
     background-color: #913246;
     user-select: none;
@@ -652,138 +651,6 @@
 }
 
 /*------------------------------------*\
-    Progress-bar
-\*------------------------------------*/
-.progressbar-container{
-	padding-bottom: 80px;
-}
-.progressbar-container .bar{
-	position: absolute;
-	top: 0;
-	vertical-align: center;
-	background-color: #C94560;
-	height: 5px;
-	width: 0%;
-	border-radius: 2.5px;
-	z-index: 1
-}
-.bar-animation{
-	animation: fill 1s 1 1.5s ease-out forwards;
-}
-
-@keyframes fill{
-	0% {
-	width: 0%;
-	}
-	100% {
-	width: 25%;
-	}
-}
-.point-container{
-	position: relative;
-	background-color: #ccc;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 5px;
-	width: 100%;
-}
-.point{
-	position: relative;
-	color: #963448;
-}
-.point:before{
-	content: '';
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 100%;
-	height: 120px;
-	border-radius: 100%;
-	transform: translate(-50%, -50%);
-}
-.point--complete{
-	color: #963448;
-}
-.bullet{
-	transform: translateY(-1px);
-	background: #963448;
-	width: 8px;
-	height: 8px;
-	border-radius: 100%;
-	z-index: 1;
-}
-.point--complete .bullet,
-.point--active .bullet{
-	background: #fff;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 6px #963448;
-}
-.point--active .bullet {
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 10px #963448;
-}
-.point .label{
-	position: absolute;
-	top: 100%;
-	left: 55%;
-	margin-top: 20px;
-	font-size: 0.75rem;
-	font-weight: 600;
-	white-space: nowrap;
-	transform: translateX(-50%);
-}
-.point .label.ch0:after{
-	content: "Start";
-}
-.point .label.ch1:after{
-	content: "Chapter 1";
-}
-.point .label.ch2:after{
-	content: "Chapter 2";
-}
-.point .label.ch3:after{
-	content: "Chapter 3";
-}
-.point .label.ch4:after{
-	content: "Chapter 4";
-}
-.point .label.ch5:after{
-	content: "Chapter 5";
-}
-.point .label.ch6:after{
-	content: "Chapter 6";
-}
-@media (max-width: 767px){
-	.point .label.ch0:after{
-		content: "Start";
-	}
-	.point .label.ch1:after{
-		content: "Ch 1";
-	}
-	.point .label.ch2:after{
-		content: "Ch 2";
-	}
-	.point .label.ch3:after{
-		content: "Ch 3";
-	}
-	.point .label.ch4:after{
-		content: "Ch 4";
-	}
-	.point .label.ch5:after{
-		content: "Ch 5";
-	}
-	.point .label.ch6:after{
-		content: "Ch 6";
-	}
-}
-/*------------------------------------*\
-    Swiper
-\*------------------------------------*/
-.swiper-container{
-	width: 100%;
-	height: 300px;
-}
-
-/*------------------------------------*\
     Footer
 \*------------------------------------*/
 .footer{
@@ -811,11 +678,6 @@
 	width: 160px;
 
 	z-index: 1;
-}
-@media (max-width: 767px){
-	.underbox{
-		width: 140px;
-	}
 }
 .underbox-container{
 	display: flex;
@@ -866,22 +728,82 @@
     Bg-fixed
 \*------------------------------------*/
 .bg-wrapper {
-    clip: rect(0, auto, auto, 0);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+	clip: rect(0, auto, auto, 0);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 .bg-fixed {
-    position: fixed;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center center;
-    transform: translateZ(0);
-    will-change: transform;
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	transform: translateZ(0);
+	will-change: transform;
+}
+
+/*------------------------------------*\
+    Newsbox
+\*------------------------------------*/
+.overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/common/overlay.png);
+	background-repeat: repeat;
+
+	cursor: pointer;
+	opacity: 0.5;
+
+	z-index: 4;
+}
+.pop{
+	box-sizing: content-box;
+	position: fixed;
+	display: none;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	height: 60%;
+	background: #ffffff;
+	border-radius: 10px;
+	border: 10px solid rgba(0,0,0,0.6);
+
+	z-index: 5;
+}
+.news_content .closebtn{
+	cursor: pointer;
+	position: absolute;
+	top: -60px;
+	right: -10px;
+	padding-right: 5px;
+	background-image: url(../images/common/close.png);
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+
+	z-index: 6;
+	transition: all 0.3s;
+}
+.pop .closebtn:hover{
+	transform: rotate(180deg);
+}
+.news_pop{
+	width: 100%;
+	height: 100%;
+	margin: 5px;
+	padding-right: 3px;
+	padding-bottom: 10px;
+
+	overflow: hidden;
 }
