@@ -139,72 +139,72 @@ $(document).ready(function() {
 	// news_all
 	$("#pop_news_all").click(function () {
 		$("#news_all, .overlay").fadeIn(300);
-		$("body").addClass("overflow");
+		$("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, #news_all, .overlay").click(function () {
 		$("#news_all, .overlay").fadeOut(300);
-		$("body").removeClass("overflow");
+		$("html, body").removeClass("overflow");
 	});
 	// news_1
 	$("#pop_1").click(function () {
 		$("#news1, .overlay").fadeIn(300);
-		$("body").addClass("overflow");
+		$("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news1, .overlay").fadeOut(300);
-		$("body").removeClass("overflow");
+		$("html, body").removeClass("overflow");
 	});
 	// news_2
 	$("#pop_2").click(function () {
 		$("#news2, .overlay").fadeIn(300);
-		$("body").addClass("overflow");
+		$("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news2, .overlay").fadeOut(300);
-		$("body").removeClass("overflow");
+		$("html, body").removeClass("overflow");
 	});
 	// news_3
 	$("#pop_3").click(function () {
 		$("#news3, .overlay").fadeIn(300);
-		$("body").addClass("overflow");
+		$("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news3, .overlay").fadeOut(300);
-		$("body").removeClass("overflow");
+		$("html, body").removeClass("overflow");
 	});
 	// news_4
 	$("#pop_4").click(function () {
 		$("#news4, .overlay").fadeIn(300);
-		$("body").addClass("overflow");
+		$("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news4, .overlay").fadeOut(300);
-		$("body").removeClass("overflow");
+		$("html, body").removeClass("overflow");
 	});
 	// news_5
 	$("#pop_5").click(function () {
 		$("#news5, .overlay").fadeIn(300);
-		$("body").addClass("overflow");
+		$("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#news5, .overlay").fadeOut(300);
-		$("body").removeClass("overflow");
+		$("html, body").removeClass("overflow");
 	});
 	// version_news
 	$("#pop_versions").click(function () {
 		$("#versions_all, .overlay").fadeIn(300);
-		$("body").addClass("overflow");
+		$("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
 		$("#versions_all, .overlay").fadeOut(300);
-		$("body").removeClass("overflow");
+		$("html, body").removeClass("overflow");
 	});
 
 // Hover-color
