@@ -1212,9 +1212,9 @@
 }
 
 /* stop-scroll */
-html, body{
+/*html, body{
 	position: relative;
-}
+}*/
 
 /* overflow */
 .overflow{
