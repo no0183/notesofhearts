@@ -771,7 +771,7 @@
 	position: fixed;
 	display: none;
 	top: 50%;
-	left: 60%;
+	left: 50%;
 	transform: translate(-50%,-50%);
 	width: 80%;
 	height: 60%;
@@ -793,7 +793,7 @@
 	width: 32px;
 	height: 32px;
 
-	z-index: 6;
+	z-index: 10;
 	transition: all 0.3s;
 }
 .pop .closebtn:hover{
