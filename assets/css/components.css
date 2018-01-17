@@ -784,9 +784,10 @@
 }
 .news_content .closebtn{
 	cursor: pointer;
+	display: none;
 	position: fixed;
 	top: 12%;
-	right: 9%;
+	right: 10%;
 	background-image: url(../images/common/close.png);
 	background-repeat: no-repeat;
 	width: 32px;

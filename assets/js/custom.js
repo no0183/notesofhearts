@@ -138,72 +138,72 @@ $(document).ready(function() {
 // Popup
 	// news_all
 	$("#pop_news_all").click(function () {
-		$("#news_all, .overlay").fadeIn(300);
+		$("#news_all, .overlay, .closebtn").fadeIn(300);
 		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, #news_all, .overlay").click(function () {
-		$("#news_all, .overlay").fadeOut(300);
+		$("#news_all, .overlay, .closebtn").fadeOut(300);
 		// $("html, body").removeClass("overflow");
 	});
 	// news_1
 	$("#pop_1").click(function () {
-		$("#news1, .overlay").fadeIn(300);
+		$("#news1, .overlay, .closebtn").fadeIn(300);
 		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news1, .overlay").fadeOut(300);
+		$("#news1, .overlay, .closebtn").fadeOut(300);
 		// $("html, body").removeClass("overflow");
 	});
 	// news_2
 	$("#pop_2").click(function () {
-		$("#news2, .overlay").fadeIn(300);
+		$("#news2, .overlay, .closebtn").fadeIn(300);
 		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news2, .overlay").fadeOut(300);
+		$("#news2, .overlay, .closebtn").fadeOut(300);
 		// $("html, body").removeClass("overflow");
 	});
 	// news_3
 	$("#pop_3").click(function () {
-		$("#news3, .overlay").fadeIn(300);
+		$("#news3, .overlay, .closebtn").fadeIn(300);
 		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news3, .overlay").fadeOut(300);
+		$("#news3, .overlay, .closebtn").fadeOut(300);
 		// $("html, body").removeClass("overflow");
 	});
 	// news_4
 	$("#pop_4").click(function () {
-		$("#news4, .overlay").fadeIn(300);
+		$("#news4, .overlay, .closebtn").fadeIn(300);
 		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news4, .overlay").fadeOut(300);
+		$("#news4, .overlay, .closebtn").fadeOut(300);
 		// $("html, body").removeClass("overflow");
 	});
 	// news_5
 	$("#pop_5").click(function () {
-		$("#news5, .overlay").fadeIn(300);
+		$("#news5, .overlay, .closebtn").fadeIn(300);
 		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news5, .overlay").fadeOut(300);
+		$("#news5, .overlay, .closebtn").fadeOut(300);
 		// $("html, body").removeClass("overflow");
 	});
 	// version_news
 	$("#pop_versions").click(function () {
-		$("#versions_all, .overlay").fadeIn(300);
+		$("#versions_all, .overlay, .closebtn").fadeIn(300);
 		// $("html, body").addClass("overflow");
 	});
 
 	$(".closebtn, .pop, .overlay").click(function () {
-		$("#versions_all, .overlay").fadeOut(300);
+		$("#versions_all, .overlay, .closebtn").fadeOut(300);
 		// $("html, body").removeClass("overflow");
 	});
 
