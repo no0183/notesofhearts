@@ -1,59 +1,22 @@
 $(document).ready(function() {
 
-  var $docEl = $('html, body'),
-    $wrap = $('.wrapper'),
-    scrollTop;
-
-  $('button').click(function(e) {
-    overlayOpen();
-    e.preventDefault();
-  });
-
-  $('.close').click(function(e) {
-    overlayClose();
-    e.preventDefault();
-  });
-  
-  var overlayClose = function() {
-    $.unlockBody();
-    $('body').removeClass('overlay-open');
-  }
-  var overlayOpen = function() {
-    $('body').addClass('overlay-open');
-    $.lockBody();
-  }
-
-  $.lockBody = function() {
-    if(window.pageYOffset) {
-      scrollTop = window.pageYOffset;
-      
-      $wrap.css({
-        top: - (scrollTop)
-      });
-    }
-
-    $docEl.css({
-      height: "100%",
-      overflow: "hidden"
-    });
-  }
-
-  $.unlockBody = function() {
-    $docEl.css({
-      height: "",
-      overflow: ""
-    });
-
-    $wrap.css({
-      top: ''
-    });
-
-    window.scrollTo(0, scrollTop);
-    window.setTimeout(function () {
-      scrollTop = null;
-    }, 0);
-  }
-
+	var type = navigator.appName
+	if (type=="Netscape"){
+	var lang = navigator.language
+	}
+	else{
+	var lang = navigator.userLanguage
+	}
+	// 
+	if (/^zh-(tw|hant)/.test(lang)){
+		window.location.href="../../index_tw.html"
+	}
+	else if (/^zh-(cn|hans)/.test(lang)){
+		window.location.href="../../index_cn.html"
+	}
+	else{
+		window.location.href="../../index_en.html"
+	};
 
 // Hamburger
 	$(".hamburger").click(function(){
