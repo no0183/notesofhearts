@@ -796,7 +796,7 @@
 	z-index: 6;
 	transition: all 0.3s;
 }
-.pop .closebtn:hover{
+.closebtn:hover{
 	transform: rotate(180deg);
 }
 .news_pop{
