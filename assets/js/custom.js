@@ -1,23 +1,5 @@
 $(document).ready(function() {
 
-	var type = navigator.appName
-	if (type=="Netscape"){
-	var lang = navigator.language
-	}
-	else{
-	var lang = navigator.userLanguage
-	}
-	// 
-	if (/^zh-(tw|hant)/.test(lang)){
-		window.location.href="../../index_tw.html"
-	}
-	else if (/^zh-(cn|hans)/.test(lang)){
-		window.location.href="../../index_cn.html"
-	}
-	else{
-		window.location.href="../../index_en.html"
-	};
-
 // Hamburger
 	$(".hamburger").click(function(){
 		$(this).toggleClass("is-active");
