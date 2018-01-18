@@ -1,4 +1,4 @@
-/* warpper */
+ warpper */
 .wrapper{
 	background-color: #F3F4F5;
 }
@@ -60,6 +60,97 @@
 	background-position: center 60px;
 }
 
+/* water fairy */
+.water_fairy{
+	position: absolute;
+	width: 15%;
+	height: 0;
+	padding-bottom: 115%;
+	right: 0;
+
+	animation: 2s water_fairy infinite linear;
+}
+.water_fairy .body{
+	position: absolute;
+	width: 100%;
+	height: 0;
+	padding-bottom: 115%;
+	background-image: url(../images/common/Water_body.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+
+	z-index: 2;
+}
+.water_fairy .wing{
+	position: absolute;
+	width: 100%;
+	height: 300px;
+}
+.water_fairy .l_wing{
+	position: absolute;
+	width: 42%;
+	height: 0;
+	top: 9%;
+	left: -4%;
+	padding-bottom: 40%;
+	background-image: url(../images/common/Water_l_wing.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+
+	z-index: 1;
+	animation: 2s water_wing_left infinite linear;
+}
+.water_fairy .r_wing{
+	position: absolute;
+	width: 50%;
+	height: 0;
+	top: 28%;
+	right: 6%;
+	padding-bottom: 25%;
+	background-image: url(../images/common/Water_r_wing.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+
+	z-index: 1;
+	animation: 2s water_wing_right infinite linear;
+}
+@keyframes water_fairy{
+	0% {
+	transform: translateY(10px);
+	}
+	50% {
+	transform: translateY(0px);
+	}
+	100% {
+	transform: translateY(10px);
+	}
+}
+@keyframes water_wing_left{
+	0% {
+	transform-origin: right bottom;
+	}
+	50% {
+	transform-origin: right bottom;
+	transform: rotate(-20deg);
+	}
+	100% {
+	transform-origin: right bottom;
+	}
+}
+@keyframes water_wing_right{
+	0% {
+	transform-origin: left center;
+	transform: rotate(-20deg);
+	}
+	50% {
+	transform-origin: left center;
+	transform: rotate(0deg);
+	}
+	100% {
+	transform-origin: left center;
+	transform: rotate(-20deg);
+	}
+}
 /* pc */
 @media (max-width: 767px){
 	.pc{
@@ -262,12 +353,12 @@
 	border-radius: 100%;
 	z-index: 1;
 }
-.point--complete .bullet,
-.point--active .bullet{
+.point--complete .bullet{
 	background: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 6px #963448;
 }
-.point--active .bullet {
+.point--active .bullet{
+	background: #fff;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 10px #963448;
 }
 .point .label{
@@ -302,6 +393,16 @@
 	content: "Chapter 6";
 }
 @media (max-width: 767px){
+	.bullet{
+		width: 6px;
+		height: 6px;
+	}
+	.point--complete .bullet{
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 5px #963448;
+	}
+	.point--active .bullet{
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 8px #963448;
+	}
 	.point .label.ch0:after{
 		content: "Start";
 	}
@@ -1214,4 +1315,4 @@
 /* overflow */
 /*.overflow{
 	overflow: hidden;
-}*/
+}

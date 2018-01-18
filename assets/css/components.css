@@ -707,21 +707,31 @@
 }
 .underbox .patreon{
 	margin-left: 0;
-	background-image: url(../images/common/icon_patreon_old.png);
+	width: 24px;
+	height: 24px;
+	background-image: url(../images/common/icon_patreon.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: top;
 }
 .underbox .patreon:hover,
 .underbox .patreon:active{
-	margin-left: 0;
-	background-image: url(../images/common/icon_patreon.png);
+	background-position: bottom;
 }
 .underbox .twitter{
 	background-image: url(../images/common/icon_twitter.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 .underbox .weibo{
 	background-image: url(../images/common/icon_weibo.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 .underbox .facebook{
 	background-image: url(../images/common/icon_facebook.png);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
 }
 
 /*------------------------------------*\
