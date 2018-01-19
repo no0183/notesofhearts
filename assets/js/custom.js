@@ -5,6 +5,20 @@ $(document).ready(function() {
 		$(this).toggleClass("is-active");
 	});
 
+// Music Player
+	$('#musicplayer').on('click', function(e) {
+		e.preventDefault();
+		$(this).toggleClass('pause');
+			if($(this).hasClass('pause')) {
+			$("#audio-player")[0].pause();
+			$(".loader .line").addClass("stop");
+			}
+			else {
+			$("#audio-player")[0].play();
+			$(".loader .line").removeClass("stop");
+			}
+	});
+
 // Scroll add and remove Class //
 	$(window).scroll(function(){
     	// console.log($(window).scrollTop()); // 偵測距離
@@ -40,6 +54,7 @@ $(document).ready(function() {
 	sr.reveal('.index-chapter .js-moveInUp',{},300);
 	sr.reveal('.index-gallery .js-moveInUp',{scale: 1},300);
 	sr.reveal('.customization .js-moveInUp',{},300);
+	sr.reveal('.customization .js-moveLeft',{},300);
 	sr.reveal('.index-posture .js-moveInUp',{},300);
 	sr.reveal('.equipment .js-moveInUp',{},300);
 	sr.reveal('.index-character .js-moveInUp',{scale: 1},300);
