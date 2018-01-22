@@ -26,7 +26,7 @@
 	<!-- CSS global & components -->
 	<link rel="stylesheet" type="text/css" href="assets/css/base.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/components.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/index.style.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.style.css">
 
 <style>
 .asideBox .active:after{
@@ -64,9 +64,6 @@
 }
 .asideBox a:last-child{
 	margin-bottom:0;
-}
-.jumbotron .movie-container:before{
-	padding-top: 5%;
 }
 </style>
 
@@ -221,10 +218,7 @@
 				</div>
 				<h1 class="jumbotron__heading js-moveInUp">游戏前导片</h1>
 				<div class="movie-container js-moveInUp">
-					<video controls>
-					<source src="assets/video/trailer.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-					</video>
+					<iframe width="100%" height="100%" src="video.html" frameborder="0"></iframe>
 				</div>
 				<div class="anchor2 chevron-center js-moveInUp-delay"><span class="chevron bottom"></span></div>
 			</div>
@@ -561,6 +555,10 @@
 									<p class="combat">魔法 / 辅助</p>
 									<p class="range">长射程</p>
 									<img class="model" src="assets/images/character/model_xingming.png" alt="XingMing"></img>
+									<img class="anime star1" src="assets/images/character/ming_star1.png"></img>
+									<img class="anime star2" src="assets/images/character/ming_star2.png"></img>
+									<img class="anime star3" src="assets/images/character/ming_star1.png"></img>
+									<img class="anime star4" src="assets/images/character/ming_star2.png"></img>
 								</div>
 								<div class="carousel-item">
 									<img class="d-block w-100" src="assets/images/character/intro_magnolia.jpg" alt="Magnolia">
@@ -570,6 +568,12 @@
 									<p class="combat">魔法 / 控制</p>
 									<p class="range">长射程</p>
 									<img class="model" src="assets/images/character/model_magnolia.png" alt="Magnolia"></img>
+									<div class="anime bflybox1">
+										<img class="anime bfly1" src="assets/images/character/magnolia_butterfly.png"></img>
+									</div>
+									<div class="anime bflybox2">
+										<img class="anime bfly2" src="assets/images/character/magnolia_butterfly.png"></img>
+									</div>
 								</div>
 								<div class="carousel-item">
 									<img class="d-block w-100" src="assets/images/character/intro_oscar.jpg" alt="Oscar">
