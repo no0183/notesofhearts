@@ -29,12 +29,10 @@ $(document).ready(function() {
 		e.preventDefault();
 		$(this).toggleClass('pause');
 			if($(this).hasClass('pause')) {
-			$("#bgm")[0].pause();
-			$(".loader .line").addClass("stop");
+				$("#bgm")[0].pause();
 			}
 			else {
-			$("#bgm")[0].play();
-			$(".loader .line").removeClass("stop");
+				$("#bgm")[0].play();
 			}
 	});
 
