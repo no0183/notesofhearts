@@ -5,16 +5,35 @@ $(document).ready(function() {
 		$(this).toggleClass("is-active");
 	});
 
+// Auto Play
+	function autoPlayMusic() {
+		function musicInBrowserHandler() {
+			musicPlay(true);
+			document.body.removeEventListener('touchstart', musicInBrowserHandler);
+		}
+		document.body.addEventListener('touchstart', musicInBrowserHandler);
+	}
+	function musicPlay(isPlay) {
+	    var audio = document.getElementById('bgm');
+	    if (isPlay && audio.paused) {
+	        audio.play();
+	    }
+	    if (!isPlay && !audio.paused) {
+	        audio.pause();
+	    }
+	}
+	autoPlayMusic();
+
 // Music Player
 	$('#musicplayer').on('click', function(e) {
 		e.preventDefault();
 		$(this).toggleClass('pause');
 			if($(this).hasClass('pause')) {
-			$("#audio-player")[0].pause();
+			$("#bgm")[0].pause();
 			$(".loader .line").addClass("stop");
 			}
 			else {
-			$("#audio-player")[0].play();
+			$("#bgm")[0].play();
 			$(".loader .line").removeClass("stop");
 			}
 	});
@@ -66,11 +85,9 @@ $(document).ready(function() {
 	},300);
 	sr.reveal('.index-staff .js-moveInUp',{},300);
 	sr.reveal('.index-staff .js-moveInRight',{scale: 1},300);
+	sr.reveal('.staff2.js-moveInRight',{scale: 1},300);
 	sr.reveal('.index-staff .js-moveInLeft',{scale: 1},300);
 	sr.reveal('.index-quote .js-moveInUp',{},300);
-	// sr.reveal('.index-contact .js-moveInUp',{scale: 1},300);
-	// sr.reveal('.index-contact .js-moveInRight',{scale: 1},300);
-	// sr.reveal('.index-contact .js-moveInLeft',{scale: 1},300);
 
 // ScrollTop //
 	var h1 = $("#anchor1").position();
@@ -151,111 +168,13 @@ $(document).ready(function() {
 		});
 
 // Popup
-	// news_all
-	$("#pop_news_all").click(function () {
-		$("#news_all, .overlay, .closebtn").fadeIn(300);
-		// $("html, body").addClass("overflow");
+	$('.js-popup').click(function () {
+		$('.pop, .overlay, .closebtn').fadeIn(300);
+		var url = $(this).data('url');
+		$('.pop iframe').attr('src',url);
+	});
+	$('.closebtn, .pop, .overlay').click(function () {
+		$('.pop, .overlay, .closebtn').fadeOut(300);
 	});
 
-	$(".closebtn, #news_all, .overlay").click(function () {
-		$("#news_all, .overlay, .closebtn").fadeOut(300);
-		// $("html, body").removeClass("overflow");
-	});
-	// news_1
-	$("#pop_1").click(function () {
-		$("#news1, .overlay, .closebtn").fadeIn(300);
-		// $("html, body").addClass("overflow");
-	});
-
-	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news1, .overlay, .closebtn").fadeOut(300);
-		// $("html, body").removeClass("overflow");
-	});
-	// news_2
-	$("#pop_2").click(function () {
-		$("#news2, .overlay, .closebtn").fadeIn(300);
-		// $("html, body").addClass("overflow");
-	});
-
-	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news2, .overlay, .closebtn").fadeOut(300);
-		// $("html, body").removeClass("overflow");
-	});
-	// news_3
-	$("#pop_3").click(function () {
-		$("#news3, .overlay, .closebtn").fadeIn(300);
-		// $("html, body").addClass("overflow");
-	});
-
-	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news3, .overlay, .closebtn").fadeOut(300);
-		// $("html, body").removeClass("overflow");
-	});
-	// news_4
-	$("#pop_4").click(function () {
-		$("#news4, .overlay, .closebtn").fadeIn(300);
-		// $("html, body").addClass("overflow");
-	});
-
-	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news4, .overlay, .closebtn").fadeOut(300);
-		// $("html, body").removeClass("overflow");
-	});
-	// news_5
-	$("#pop_5").click(function () {
-		$("#news5, .overlay, .closebtn").fadeIn(300);
-		// $("html, body").addClass("overflow");
-	});
-
-	$(".closebtn, .pop, .overlay").click(function () {
-		$("#news5, .overlay, .closebtn").fadeOut(300);
-		// $("html, body").removeClass("overflow");
-	});
-	// version_news
-	$("#pop_versions").click(function () {
-		$("#versions_all, .overlay, .closebtn").fadeIn(300);
-		// $("html, body").addClass("overflow");
-	});
-
-	$(".closebtn, .pop, .overlay").click(function () {
-		$("#versions_all, .overlay, .closebtn").fadeOut(300);
-		// $("html, body").removeClass("overflow");
-	});
-
-// Hover-color
-	$("#pop_1").hover(function(){
-		$(".news-para.link1").css("color","#963448");
-		$("#date1").css("color","#333");
-		},function(){
-		$(".news-para.link1").css("color","#333");
-		$("#date1").css("color","#b8b8b8");
-	});
-	$("#pop_2").hover(function(){
-		$(".news-para.link2").css("color","#963448");
-		$("#date2").css("color","#333");
-		},function(){
-		$(".news-para.link2").css("color","#333");
-		$("#date2").css("color","#b8b8b8");
-	});
-	$("#pop_3").hover(function(){
-		$(".news-para.link3").css("color","#963448");
-		$("#date3").css("color","#333");
-		},function(){
-		$(".news-para.link3").css("color","#333");
-		$("#date3").css("color","#b8b8b8");
-	});
-	$("#pop_4").hover(function(){
-		$(".news-para.link4").css("color","#963448");
-		$("#date4").css("color","#333");
-		},function(){
-		$(".news-para.link4").css("color","#333");
-		$("#date4").css("color","#b8b8b8");
-	});
-	$("#pop_5").hover(function(){
-		$(".news-para.link5").css("color","#963448");
-		$("#date5").css("color","#333");
-		},function(){
-		$(".news-para.link5").css("color","#333");
-		$("#date5").css("color","#b8b8b8");
-	});
 }); // ready() END
