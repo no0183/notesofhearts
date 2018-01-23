@@ -23,10 +23,10 @@
 	else{
 	var lang = navigator.userLanguage
 	}
-	if (/^zh-(TW|HK|MO|Hant)/.test(lang)){
+	if (/^zh-(TW|HK|MO|Hant)/i.test(lang)){
 		window.location.href="index_tw.html"
 	}
-	else if (/^zh-(CN|Hans)/.test(lang)){
+	else if (/^zh-(CN|Hans)/i.test(lang)){
 		window.location.href="index_cn.html"
 	}
 	else{
