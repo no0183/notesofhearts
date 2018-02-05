@@ -65,11 +65,22 @@
 .asideBox a:last-child{
 	margin-bottom:0;
 }
+
+canvas{
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 10;
+);
 </style>
 
 </head>
 <body>
 	<div class="wrapper">
+		<canvas id="canvas"></canvas>
 		<!-- Start header -->
 		<div class="scrollspy header">
 			<nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
@@ -198,7 +209,7 @@
 
 		<!-- Start main -->
 		<section data-spy="scroll" data-target="scrollspy" data-offset="0" class="main">
-
+			
 		<!-- Start Tailer -->
 		<div class="top jumbotron u-text-center" id="anchor1">
 			<div class="bg-wrapper">
@@ -1015,6 +1026,8 @@
 	<script src="assets/vender/chevron/chevron.js"></script>
 	<!-- Custom -->
 	<script src="assets/js/custom.min.js"></script>
+	<!-- Snow -->
+	<script src="assets/js/snow.js"></script>
 
 </body>
 </html>
