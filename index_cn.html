@@ -66,7 +66,17 @@
 	margin-bottom:0;
 }
 
-.sakura{
+canvas{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 10;
+}
+
+/*.sakura{
 	position:fixed;
 	left:-20px;
 	top:0;
@@ -159,7 +169,7 @@
 	animation-name: fall6;
 	animation-delay: 2s;
 	top: 85%;
-}
+}*/
 
 @keyframes fall1 {
   to {
@@ -196,7 +206,7 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="sakura">
+		<!-- <div class="sakura">
 			<div class="petal"></div>
 			<div class="petal"></div>
 			<div class="petal"></div>
@@ -209,7 +219,8 @@
 			<div class="petal"></div>
 			<div class="petal"></div>
 			<div class="petal"></div>
-		</div>
+		</div> -->
+		<canvas id="canvas"></canvas>
 		<!-- Start header -->
 		<div class="scrollspy header">
 			<nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark">
@@ -1155,6 +1166,8 @@
 	<script src="assets/vender/chevron/chevron.js"></script>
 	<!-- Custom -->
 	<script src="assets/js/custom.min.js"></script>
+	<!-- snow -->
+	<script src="assets/js/snow.js"></script>
 
 </body>
 </html>
